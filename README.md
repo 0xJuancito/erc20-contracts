@@ -6,6 +6,12 @@
 
 For any feedback, ideas, or if you think some contract should be removed, please open an issue, or contact me at [0xJuancito](https://twitter.com/0xJuancito).
 
+## Look for a Token
+
+You can clone the repository, or simply search for it on the `Go to file` navbar:
+
+<img width="696" alt="Screenshot 2023-12-21 at 16 27 54" src="https://github.com/0xJuancito/multichain-erc20/assets/12957692/accd885e-54d9-4370-bf1b-42485812501f">
+
 ## Why?
 
 Some tokens [behave differently](https://github.com/0xJuancito/multichain-auditor?tab=readme-ov-file#erc20-decimals) on different chains. They might have different decimals, interfaces, or implementation that can make them succeed on some chain but fail on another.
