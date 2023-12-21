@@ -12,17 +12,17 @@ You can clone the repository, or simply search for it on the `Go to file` navbar
 
 <img width="696" alt="Screenshot 2023-12-21 at 16 27 54" src="https://github.com/0xJuancito/multichain-erc20/assets/12957692/accd885e-54d9-4370-bf1b-42485812501f">
 
+#### Examples
+
+Some examples of popular token implementations you might like to check the differences on different chains:
+
+- [USDT](https://github.com/0xJuancito/multichain-erc20/tree/main/tokens/USDT/tether) | [USDC](https://github.com/0xJuancito/multichain-erc20/tree/main/tokens/USDC/usd-coin) | [DAI](https://github.com/0xJuancito/multichain-erc20/tree/main/tokens/DAI/dai) | [WETH](https://github.com/0xJuancito/multichain-erc20/tree/main/tokens/WETH/weth) | [LINK](https://github.com/0xJuancito/multichain-erc20/tree/main/tokens/LINK/chainlink) | [WBTC](https://github.com/0xJuancito/multichain-erc20/tree/main/tokens/WBTC/wrapped-bitcoin)
+
 ## Why?
 
 Some tokens [behave differently](https://github.com/0xJuancito/multichain-auditor?tab=readme-ov-file#erc20-decimals) on different chains. They might have different decimals, interfaces, or implementation that can make them succeed on some chain but fail on another.
 
 When auditing or designing a protocol, it's important to check that assumptions hold on all chains the protocol is deployed to.
-
-## Examples
-
-Some examples of popular token implementations you might like to check the differences on different chains:
-
-- [USDT](https://github.com/0xJuancito/multichain-erc20/tree/main/tokens/USDT/tether) | [USDC](https://github.com/0xJuancito/multichain-erc20/tree/main/tokens/USDC/usd-coin) | [DAI](https://github.com/0xJuancito/multichain-erc20/tree/main/tokens/DAI/dai) | [WETH](https://github.com/0xJuancito/multichain-erc20/tree/main/tokens/WETH/weth) | [LINK](https://github.com/0xJuancito/multichain-erc20/tree/main/tokens/LINK/chainlink) | [WBTC](https://github.com/0xJuancito/multichain-erc20/tree/main/tokens/WBTC/wrapped-bitcoin)
 
 ## Structure
 
