@@ -1,6 +1,6 @@
 # Multichain ERC20
 
-Easily check ERC20 implementations on multiple chains.
+> Check ERC20 token implementations on multiple chains.
 
 🕵️ This is part of an on-going effort of auditing protocols on different chains. You can check [multichain-auditor](https://github.com/0xJuancito/multichain-auditor) to learn more.
 
