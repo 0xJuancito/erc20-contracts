@@ -6,9 +6,21 @@
 
 For any feedback, ideas, or if you think some contract should be removed, please open an issue, or contact me at [0xJuancito](https://twitter.com/0xJuancito).
 
+## Why?
+
+Some tokens [behave differently](https://github.com/0xJuancito/multichain-auditor?tab=readme-ov-file#erc20-decimals) on different chains. They might have different decimals, interfaces, or implementation that can make them succeed on some chain but fail on another.
+
+When auditing or designing a protocol, it's important to check that assumptions hold on all chains the protocol is deployed to.
+
+## Examples
+
+Some examples of popular token implementations you might like to check the differences on different chains:
+
+- [USDT](https://github.com/0xJuancito/multichain-erc20/tree/main/tokens/USDT/tether) | [USDC](https://github.com/0xJuancito/multichain-erc20/tree/main/tokens/USDC/usd-coin) | [DAI](https://github.com/0xJuancito/multichain-erc20/tree/main/tokens/DAI/dai) | [WETH](https://github.com/0xJuancito/multichain-erc20/tree/main/tokens/WETH/weth) | [LINK](https://github.com/0xJuancito/multichain-erc20/tree/main/tokens/LINK/chainlink) | [WBTC](https://github.com/0xJuancito/multichain-erc20/tree/main/tokens/WBTC/wrapped-bitcoin)
+
 ## Structure
 
-- Contracts are grouped by their symbol + id
+- Contracts are grouped by their `symbol/id` like `USDT/tether` (as some tokens may hold the same symbol).
 - Proxy contracts contain their implementation on a sub-directory.
 
 ##### Example:
@@ -17,8 +29,6 @@ USDT in Polygon has a proxy. Its addresses are:
 
 - **Proxy:** [tokens/USDT/tether/polygon/${proxy}/UChildERC20Proxy.sol](tokens/USDT/tether/polygon/0xc2132d05d31c914a87c6611c10748aeb04b58e8f/UChildERC20Proxy.sol)
 - **Implementation:** [tokens/USDT/tether/polygon/${proxy}/${implementation}/UChildERC20.sol](tokens/USDT/tether/polygon/0xc2132d05d31c914a87c6611c10748aeb04b58e8f/0x7ffb3d637014488b63fb9858e279385685afc1e2/UChildERC20.sol)
-
-* There are multiple tokens with the same symbols, so they are grouped with an additional id, as in `USDT/tether`.
 
 ## Future Plans
 
