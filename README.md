@@ -1,4 +1,4 @@
-# Multichain ERC20
+# ERC20 Addresses
 
 > Check ERC20 token implementations on multiple chains.
 
